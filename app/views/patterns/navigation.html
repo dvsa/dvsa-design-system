@@ -1,0 +1,41 @@
+{{ appSubNavigation({
+  sections: [
+  {
+    heading: {
+      text: 'Ask users for'
+    },
+    items: [{
+      text: '1',
+      href: '#',
+      selected: pageId == '1'
+    }]
+  }]
+}) }}
+
+{{ appSubNavigation({
+  sections: [
+  {
+    heading: {
+      text: 'Help users too'
+    },
+    items: [{
+      text: '2',
+      href: '#',
+      selected: pageId == '2'
+    }]
+  }]
+}) }}
+
+{{ appSubNavigation({
+  sections: [
+  {
+    heading: {
+      text: 'Pages'
+    },
+    items: [{
+      text: 'Question pages',
+      href: '/patterns/answer',
+      selected: pageId == 'answer'
+    }]
+  }]
+}) }}

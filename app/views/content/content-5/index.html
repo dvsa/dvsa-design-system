@@ -1,0 +1,22 @@
+{% extends "../../layouts/guidance.html" %}
+
+{% set sectionId = "content" %}
+{% set pageId = "content-1" %}
+{% set pageTitle = "Content 1" %}
+
+{% block subNav %}
+{% include "../navigation.html" %}
+{% endblock %}
+
+{% block pageContent %}
+
+  <h1 class="govuk-heading-xl"><span class="govuk-caption-xl">Content</span> {{ pageTitle }}</h1>
+
+  <div class="app-prose-scope">
+    {% markdown %}{% include "./README.md" %}{% endmarkdown %}
+  </div>
+
+
+
+{% endblock %}
+

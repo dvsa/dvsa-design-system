@@ -1,0 +1,36 @@
+{% extends "../../layouts/guidance.html" %}
+
+{% set sectionId = "community" %}
+{% set pageId = "backlog" %}
+{% set pageTitle = "Backlog" %}
+
+{% block subNav %}
+{% include "../navigation.html" %}
+{% endblock %}
+
+{% block pageContent %}
+
+  <h1 class="govuk-heading-xl"><span class="govuk-caption-xl">Community</span> {{ pageTitle }}</h1>
+
+  <div class="app-prose-scope">
+    <p>The Design System is built upon the research and experience of teams across the DVSA.</p>
+    <p>Anyone can propose, develop or contribute to new patterns and components, or improvements to existing ones.</p>
+    <p>The <a href="#">community backlog</a> contains a list of components, patterns and updates. They can be:</p>
+    <ul>
+    <li><strong>Proposed</strong> – someone has suggested a new component or pattern</li>
+    <li><strong>To do</strong> – the proposed component or pattern has been agreed and is ready to work on</li>
+    <li><strong>In progress</strong> – someone is actively working on the component or pattern</li>
+    </ul>
+    <p>You can discuss the existing styles, components and patterns in the Design System, or ones being developed, by commenting on issues in the <a href="#">community backlog</a>. </p>
+    <p>For example, you can:</p>
+    <ul>
+    <li>ask questions about a style, component or pattern</li>
+    <li>answer questions from other contributors</li>
+    <li>share examples or demos of a component or pattern</li>
+    <li>share research relating to a style, component or pattern</li>
+    </ul>
+    <p>Alternatively, you can email <a href="mailto:design-system@dvsa.gov.uk">design-system@dvsa.gov.uk</a>.</p>
+
+  </div>
+
+{% endblock %}

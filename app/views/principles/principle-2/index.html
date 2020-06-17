@@ -1,0 +1,21 @@
+{% extends "../../layouts/guidance.html" %}
+
+{% set sectionId = "principles" %}
+{% set pageId = "principle-2" %}
+{% set pageTitle = "Principle 2" %}
+
+{% block subNav %}
+{% include "../navigation.html" %}
+{% endblock %}
+
+{% block pageContent %}
+
+  <h1 class="govuk-heading-xl"><span class="govuk-caption-xl">Principles</span> {{ pageTitle }}</h1>
+
+  <div class="app-prose-scope">
+    {% markdown %}{% include "./README.md" %}{% endmarkdown %}
+  </div>
+
+
+
+{% endblock %}

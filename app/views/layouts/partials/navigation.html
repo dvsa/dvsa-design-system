@@ -1,0 +1,37 @@
+<div class="app-pane__nav">
+
+  <div class="govuk-width-container">
+
+  {{ appNavigation({
+    items: [
+      {
+        text: 'Get started',
+        href: '/get-started',
+        selected: sectionId == 'get-started'
+      },
+      {
+        text: 'Styles',
+        href: '/styles',
+        selected: sectionId == 'styles'
+      },
+      {
+        text: 'Components',
+        href: '/components',
+        selected: sectionId == 'components'
+      },
+      {
+        text: 'Patterns',
+        href: '/patterns',
+        selected: sectionId == 'patterns'
+      },
+      {
+        text: 'Community',
+        href: '/community',
+        selected: sectionId == 'community'
+      }
+    ]
+  }) }}
+
+  </div>
+
+</div>
