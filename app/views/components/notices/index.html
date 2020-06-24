@@ -1,0 +1,132 @@
+{% extends "../../layouts/guidance.html" %}
+
+{% set sectionId = "components" %}
+{% set sectionTitle = "Components" %}
+{% set pageId = "notices" %}
+{% set pageTitle = "Notices" %}
+
+{% block subNav %}
+{% include "../navigation.html" %}
+{% endblock %}
+
+{% block pageContent %}
+
+  <h1 class="govuk-heading-xl">
+    <span class="govuk-caption-xl">{{ sectionTitle | default('Styles') }} </span> {{ pageTitle }}
+  </h1>
+
+  <div class="app-prose-scope">
+
+    <p>Use the notices style to show an alert to a user...</p>
+
+
+    <!-- failure -->
+
+    <div class="app-example" style="margin-bottom:20px;">
+
+      <span class="app-example__new-window">
+        <a href="/styles/externallink/examples/default" target="_blank">Open this example in a new window</a>
+      </span>
+
+      <iframe class="app-example__frame" scrolling="auto" frameborder="0" height="150" src="/components/notices/examples/failure"></iframe>
+
+    </div>
+
+    <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(239, 236, 244); color: rgb(88, 82, 96); padding: 0.5em;"><span class="xml"><span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(42, 146, 146);">"notice"</span>&gt;</span>
+  <span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(42, 146, 146);">"icon icon-failure"</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(42, 146, 146);">"visually-hidden"</span>&gt;</span>Error<span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">span</span>&gt;</span>
+  <span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">i</span>&gt;</span>
+  <span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">p</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">strong</span>&gt;</span>Error<span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">strong</span>&gt;</span> <span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">br</span>&gt;</span>
+    There has been a problem
+  <span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">p</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">div</span>&gt;</span></span></pre>
+
+  <!-- important -->
+
+  <div class="app-example" style="margin-bottom:20px;">
+
+    <span class="app-example__new-window">
+      <a href="/styles/externallink/examples/default" target="_blank">Open this example in a new window</a>
+    </span>
+
+    <iframe class="app-example__frame" scrolling="auto" frameborder="0" height="150" src="/components/notices/examples/important"></iframe>
+
+  </div>
+
+  <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(239, 236, 244); color: rgb(88, 82, 96); padding: 0.5em;">&lt;div <span class="hljs-class"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">class</span></span>=<span class="hljs-string" style="color: rgb(42, 146, 146);">"notice"</span>&gt;
+  <span class="xml"><span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(42, 146, 146);">"icon icon-important"</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(42, 146, 146);">"visually-hidden"</span>&gt;</span>Important information<span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">span</span>&gt;</span>
+  <span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">i</span>&gt;</span></span>
+  &lt;p&gt;
+    <span class="xml"><span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">strong</span>&gt;</span>Important<span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">strong</span>&gt;</span></span><span class="xml"><span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">br</span>&gt;</span>
+    Please note: Passenger grab handle insecure
+  <span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">p</span>&gt;</span></span>
+&lt;<span class="hljs-regexp" style="color: rgb(190, 70, 120);">/div&gt;</span></pre>
+
+<!-- information -->
+
+<div class="app-example" style="margin-bottom:20px;">
+
+  <span class="app-example__new-window">
+    <a href="/styles/externallink/examples/default" target="_blank">Open this example in a new window</a>
+  </span>
+
+  <iframe class="app-example__frame" scrolling="auto" frameborder="0" height="150" src="/components/notices/examples/information"></iframe>
+
+</div>
+
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(239, 236, 244); color: rgb(88, 82, 96); padding: 0.5em;">&lt;div <span class="hljs-class"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">class</span></span>=<span class="hljs-string" style="color: rgb(42, 146, 146);">"notice"</span>&gt;
+  <span class="xml"><span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(42, 146, 146);">"icon icon-information"</span>&gt;</span>
+    <span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(42, 146, 146);">"visually-hidden"</span>&gt;</span>Information<span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">span</span>&gt;</span>
+  <span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">i</span>&gt;</span></span>
+  &lt;p&gt;
+    <span class="xml"><span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">strong</span>&gt;</span>Key information<span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">strong</span>&gt;</span></span><span class="xml"><span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">br</span>&gt;</span>
+    Passenger grab handle insecure
+  <span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">p</span>&gt;</span></span>
+&lt;<span class="hljs-regexp" style="color: rgb(190, 70, 120);">/div&gt;</span></pre>
+
+<!-- success -->
+
+<div class="app-example" style="margin-bottom:20px;">
+
+  <span class="app-example__new-window">
+    <a href="/styles/externallink/examples/default" target="_blank">Open this example in a new window</a>
+  </span>
+
+  <iframe class="app-example__frame" scrolling="auto" frameborder="0" height="150" src="/components/notices/examples/success"></iframe>
+
+</div>
+
+<pre class="hljs" style="display: block; overflow-x: auto; background: rgb(239, 236, 244); color: rgb(88, 82, 96); padding: 0.5em;">&lt;div <span class="hljs-class"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">class</span></span>=<span class="hljs-string" style="color: rgb(42, 146, 146);">"notice"</span>&gt;
+<span class="xml"><span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(42, 146, 146);">"icon icon-success"</span>&gt;</span>
+  <span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(42, 146, 146);">"visually-hidden"</span>&gt;</span>Success<span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">span</span>&gt;</span>
+<span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">i</span>&gt;</span></span>
+&lt;p&gt;
+  <span class="xml"><span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">strong</span>&gt;</span>Success<span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">strong</span>&gt;</span></span><span class="xml"><span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;<span class="hljs-name" style="color: rgb(190, 70, 120);">br</span>&gt;</span>
+  Application in progress
+<span class="hljs-tag" style="color: rgb(190, 70, 120);">&lt;/<span class="hljs-name" style="color: rgb(190, 70, 120);">p</span>&gt;</span></span>
+&lt;<span class="hljs-regexp" style="color: rgb(190, 70, 120);">/div&gt;</span></pre>
+
+
+<h2 id="when-to-use-this-component">When to use this component</h2>
+<p>Use this component when the user needs to be aware that the link will be going to an external URL.</p>
+
+<h2 id="when-not-to-use-this-component">When not to use this component</h2>
+<p>Do not use this component when the link does not take the user to an external URL.</p>
+
+<h2 id="how-it-works">How it works</h2>
+<p>To show visually that a url is external, apply the class: <code>.notices</code> to make the external icon appear.</p>
+<p>The icon is applied via css and does not require any additional HTML. Ensure the background image URL is correct otherwise the svg icon will not appear.</p>
+<p>There is also hidden assistive text to tell screenreaders this is an notices as the icon will no be visible.</p>
+
+<h2 id="research-on-this-component">Research on this component</h2>
+<p>We need more research. If you have used the notices component, get in touch to share your research findings.</p>
+
+<h2 id="when-to-use-this-component">Sketch download</h2>
+<p>Download a sketch file including this component to use in your designs.</p>
+<a class="govuk-link sketch-link govuk-!-margin-bottom-6" href="/public/sketch/notices.sketch">Download Sketch file</a>
+
+  </div>
+
+{% endblock %}

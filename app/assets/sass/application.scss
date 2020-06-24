@@ -18,6 +18,9 @@ $govuk-page-width: 1100px;
 @import 'app/highlight';
 @import 'app/markdown';
 @import 'app/masthead';
+@import 'app/external-link';
+@import 'app/notice';
+
 
 body {
   margin: 0;
