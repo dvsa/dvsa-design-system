@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="368px" height="368px" viewBox="0 0 368 368" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Combined Shape</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="tick" fill="#00703C" fill-rule="nonzero">
-            <path d="M183.903,0.00025 C285.469,0.00025 367.805,82.337 367.805,183.903 C367.805,285.469 285.469,367.805 183.903,367.805 C83.35266,367.805 1.64889538,287.107486 0.0248751185,186.944148 L0.000237197199,183.903 C-0.288,82.625 81.579,0.29 182.856,0.00025 L183.903,0.00025 L183.903,0.00025 Z M256.001,103.968 L155.168,204.801 L111.805,161.96 L82.025,191.217 L155.168,263.837 L285.78,133.225 L256.001,103.968 Z" id="Combined-Shape"></path>
-        </g>
-    </g>
-</svg>

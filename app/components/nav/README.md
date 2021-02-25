@@ -17,14 +17,14 @@ Use the navigation component to display primary navigation.
 {{ appNavigation({
     items: [
       {
-        text: 'Get started',
-        href: '/get-started',
-        selected: sectionId == 'get-started'
-      },
-      {
         text: 'Principles',
         href: '/principles',
         selected: sectionId == 'principles'
+      },
+      {
+        text: 'Get started',
+        href: '/get-started',
+        selected: sectionId == 'get-started'
       },
       {
         text: 'Styles',
@@ -56,7 +56,10 @@ Use the navigation component to display primary navigation.
 <nav class="app-nav">
   <ul class="app-nav__list">
     <li class="app-nav__list-item">
-    <a href="/get-started">Get started</a>
+      <a href="/get-started">Principles</a>
+    </li>
+    <li class="app-nav__list-item">
+      <a href="/get-started">Get started</a>
     </li>
     <li class="app-nav__list-item">
       <a href="/principles">Principles</a>
@@ -101,4 +104,4 @@ This component accepts the following arguments.
 
 ## Licence
 
-Unless otherwise stated, this codebase is released under the [MIT License](https://github.com/whatterz/moj-design-system/blob/master/LICENSE). This covers both the codebase and any sample code in the documentation.
+Unless otherwise stated, this codebase is released under the [MIT License](https://github.com/dvsa/dvsa-design-system/LICENSE). This covers both the codebase and any sample code in the documentation.

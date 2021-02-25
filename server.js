@@ -25,7 +25,6 @@ dotenv.config();
 
 // Routing
 const routes = require('./app/routes/index');
-const multiFileUploadRoutes = require('./app/routes/multi-file-upload');
 const autoRoutes = require('./app/routes/auto');
 
 // Local dependencies
@@ -154,7 +153,6 @@ app.use(sessionInMemory(Object.assign(sessionOptions, {
 
 // Use routes
 app.use(routes);
-app.use(multiFileUploadRoutes);
 app.use(autoRoutes);
 
 const renderer = new marked.Renderer();

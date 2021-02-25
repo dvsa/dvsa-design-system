@@ -13,19 +13,19 @@ If it’s marked 'to do' and you would like to work on it, read how to [develop 
 
 ## 2. Raise an issue
 
-If your idea is not on the backlog, [raise an issue](https://github.com/dvsa/moj-design-system-backlog/issues/new). A member of the Design System team will get in touch to discuss your proposal.
+If your idea is not on the backlog, [raise an issue](https://github.com/dvsa/dvsa-design-system-backlog/issues/new). A member of the Design System team will get in touch to discuss your proposal.
 
 At this stage, you just need to present your idea and evidence of the user needs. You can include screenshots or links to versions of the component or pattern in use, but avoid spending time working on a specific design or writing code.
 
 ## 3. Send your proposal for review
 
-The Design System team will help you prepare your proposal and share it with the [Design System working group](https://moj-design-system.herokuapp.com/community/design-system-working-group) to review. 
+The Design System team will help you prepare your proposal and share it with the [Design System working group](https://dvsa-design-system.herokuapp.com/community/design-system-working-group) to review. 
 
-When your proposal is ready, the Design System team will send it to the working group one week before their next monthly meeting. 
+When your proposal is ready, the Design System team will send it to the working group one week before their next monthly meeting.
 
 At the meeting, the working group will review your proposal and decide if it is useful and unique. This review helps people avoid spending time and effort on something that's not needed for the design system.
 
-After the meeting, the Design System team will let you know the decision and recommendations, if there are any. 
+After the meeting, the Design System team will let you know the decision and recommendations, if there are any.
 
 If the working group agrees your proposal is useful and unique, the working group will mark it as 'to do' on the [community backlog](https://github.com/dvsa/dvsa-design-system-backlog/projects/1).
 

@@ -3,7 +3,8 @@ $govuk-page-width: 1100px;
 
 // Import GOV.UK Frontend
 @import "node_modules/govuk-frontend/govuk/all";
-@import "node_modules/@ministryofjustice/frontend/moj/all";
+
+//@import "node_modules/@dvsa/frontend/dvsa/all";
 
 // Import Components
 @import "../../components/all";

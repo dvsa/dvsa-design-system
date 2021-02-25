@@ -6,9 +6,9 @@ First you must have followed the [GOV.UK Design System production setup guide](h
 
 ## Include the DVSA Frontend in your project
 
-To start using MOJ styles, components and patterns contained here, you’ll need to include DVSA Frontend in your project.
+To start using DVSA styles, components and patterns contained here, you’ll need to include DVSA Frontend in your project.
 
-We recommend [installing DVSA Frontend using npm](https://github.com/dvsa/moj-frontend/blob/master/docs/installation/installing-with-npm.md). Using this option, you will be able to:
+We recommend [installing DVSA Frontend using npm](https://github.com/dvsa/dvsa-frontend/blob/master/docs/installation/installing-with-npm.md). Using this option, you will be able to:
 
 - selectively include the CSS or JavaScript for individual components
 - build your own styles or components based on the palette or typography and spacing mixins
