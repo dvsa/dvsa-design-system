@@ -21,7 +21,7 @@ gulp.task('watch', gulp.parallel(
   'watch-assets',
   'watch-components'
 ));
-
+ 
 
 gulp.task('default', gulp.series(
   'generate-assets',

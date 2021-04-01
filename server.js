@@ -17,7 +17,7 @@ const hljs = require('highlight.js');
 const highlight = new NunjucksCodeHighlight(nunjucks, hljs);
 
 let sessionOptions = {
-  secret: 'moj-frontend'
+  secret: 'dvsa-frontend'
 };
 
 // Run before other code to make sure variables from .env are available
@@ -128,11 +128,11 @@ nunjucksEnvironment.addGlobal('getJsCode', fileHelper.getJSCode);
 nunjucksEnvironment.addExtension('NunjucksCodeHighlight', highlight);
 
 // Add filters from DVSA Frontend
-let mojFilters = require('./node_modules/@ministryofjustice/frontend/moj/filters/all')();
-mojFilters = Object.assign(mojFilters);
-Object.keys(mojFilters).forEach(function (filterName) {
-  nunjucksEnvironment.addFilter(filterName, mojFilters[filterName])
-});
+//let dvsaFilters = require('./node_modules/@ministryofjustice/frontend/dvsa/filters/all')();
+//dvsaFilters = Object.assign(dvsaFilters);
+//Object.keys(dvsaFilters).forEach(function (filterName) {
+//  nunjucksEnvironment.addFilter(filterName, dvsaFilters[filterName])
+//});
 
 // Set view engine
 app.set('view engine', 'html');
@@ -140,13 +140,11 @@ app.set('view engine', 'html');
 // Middleware to serve static assets
 app.use('/public', express.static(path.join(__dirname, '/public')));
 app.use('/assets', express.static(path.join(__dirname, '/node_modules/govuk-frontend/govuk/assets')))
-app.use('/assets', express.static(path.join(__dirname, '/node_modules/@ministryofjustice/frontend/moj/assets')));
 
 app.use('/node_modules/govuk-frontend', express.static(path.join(__dirname, '/node_modules/govuk-frontend')));
-app.use('/node_modules/moj-frontend', express.static(path.join(__dirname, '/node_modules/@ministryofjustice/frontend')));
 
 app.use(sessionInMemory(Object.assign(sessionOptions, {
-  name: 'moj-frontend',
+  name: 'dvsa-frontend',
   resave: false,
   saveUninitialized: false
 })));

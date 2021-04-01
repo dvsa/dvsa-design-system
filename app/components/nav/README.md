@@ -62,6 +62,9 @@ Use the navigation component to display primary navigation.
       <a href="/get-started">Get started</a>
     </li>
     <li class="app-nav__list-item">
+      <a href="/taxonomies">Taxonomies</a>
+    </li>
+    <li class="app-nav__list-item">
       <a href="/principles">Principles</a>
     </li>
     <li class="app-nav__list-item">
