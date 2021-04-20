@@ -74,10 +74,10 @@ Use the navigation component to display primary navigation.
       <a href="/components">Components</a>
     </li>
     <li class="app-nav__list-item">
-      <a href="/patterns">Patterns</a>
+      <a href="/content">Content</a>
     </li>
     <li class="app-nav__list-item">
-      <a href="/content">Content</a>
+      <a href="/patterns">Patterns</a>
     </li>
   </ul>
 </nav>
