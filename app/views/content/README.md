@@ -1,10 +1,12 @@
 # Content
 
-Use this style guide to make sure your content creates a clear and consistent experience for people using DVSA digital services.
+Use this style guide to make sure your content gives a clear, useful and trusted experience for people using Driver and Vehicle Standards Agency (DVSA) services.
 
 It covers:
- - writing for your audience
+
+ - the principles for clear, useful and trusted writing
  - terms and phrases used by DVSA
+ - how the DVSA style guide is managed
 
 It’s based on user research and and testing.
 
