@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/dvsa/dvsa-design-system#readme",
   "dependencies": {
-    "@dvsa/frontend": "0.0.17-alpha",
     "basic-auth": "^2.0.0",
     "basic-auth-connect": "^1.0.0",
     "body-parser": "^1.19.0",
