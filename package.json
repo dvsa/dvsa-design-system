@@ -3,7 +3,7 @@
   "version": "0.0.1-alpha",
   "description": "The DVSA Design System is one place for service teams to find styles, components and patterns for designing DVSA services.",
   "keywords": [
-    "ministry-of-justice",
+    "dvsa",
     "design-system",
     "design-patterns",
     "design",
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/dvsa/dvsa-design-system.git"
   },
-  "author": "Simon Whatley, Gavin Wye, Matthew Solle",
+  "author": "Alex Lee",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dvsa/dvsa-design-system/issues"
