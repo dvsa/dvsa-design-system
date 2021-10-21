@@ -2,8 +2,8 @@
 
 {% set sectionId = "components" %}
 {% set sectionTitle = "Components" %}
-{% set pageId = "external-link" %}
-{% set pageTitle = "External Link" %}
+{% set pageId = "email-replay" %}
+{% set pageTitle = "Email replay" %}
 
 {% block subNav %}
 {% include "../navigation.html" %}
@@ -12,12 +12,13 @@
 {% block pageContent %}
 
   <h1 class="govuk-heading-xl">
-    <span class="govuk-caption-xl">{{ sectionTitle | default('Styles') }} </span> {{ pageTitle }} (Example)
+    <span class="govuk-caption-xl">{{ sectionTitle | default('Styles') }} </span> {{ pageTitle }}
   </h1>
 
   <div class="app-prose-scope">
 
-    <p>Use the external link style to show when a link is going to an external URL.</p>
+    <p>Use the email replay component to replay the email users enter in the input field.</p>
+
 
     <div class="app-example">
 
@@ -270,17 +271,18 @@
 
 <h2 id="research-on-this-component">Taxonomies</h2>
 <p>Use the taxonomy list to see what journeys this component is used in across DVSA.</p>
+<p class="govuk-!-margin-bottom-7">
+  <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--green">
+    Check something
+  </strong>
+  <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--turquoise">
+    Register for something
+  </strong>
+  <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--blue">
+    Tell something
+  </strong>
+</p>
 
-<p class="govuk-body">This component is used in:</p>
-
-<ul class="govuk-list">
-  <li>
-    <a class="govuk-link" href="#">The "apply for something" taxonomy</a>
-  </li>
-  <li>
-    <a class="govuk-link" href="#">The "book something" taxonomy</a>
-  </li>
-</ul>
 
 <h2 id="research-on-this-component">Services using this component</h2>
 
@@ -291,10 +293,6 @@
     <b>41 times</b> in the Vehicle Operator Licencing (VOL) service.
   </li>
 </ul>
-
-<h2 id="when-to-use-this-component">Sketch download</h2>
-<p>Download a sketch file including this component to use in your designs.</p>
-<a class="govuk-link sketch-link govuk-!-margin-bottom-6" href="/public/sketch/external-link.sketch">Download Sketch file</a>
 
   </div>
 
