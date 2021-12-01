@@ -1,18 +1,17 @@
-<style>
-  .icon {
-    display: inline-block;
-    margin: 0 5px;
-  }
-  .selfserve-external-link {
-    background-position: 0 81.4070351758794%;
-    width: 12px;
-    height: 12px;
-    background-image:url('/public/images/icon-sprite.svg');
-    background-repeat:no-repeat;
-  }
 
-</style>
+<div class="govuk-form-group">
+  <label class="govuk-label" for="email">
+    Your email address
+  </label>
+  <span id="hint" class="govuk-hint">
+    We’ll only use this to contact you about your acquired rights application.
+  </span>
+  <input data-url="number" aria-describedby="hint" class="govuk-input govuk-!-width-two-thirds input-data-form" id="email" name="email" type="text" maxlength="265">
+</div>
 
-<a href="#" target="_blank">
-  this is an external link<i class="icon selfserve-external-link"></i>
-</a>
+<div class="govuk-inset-text" style="overflow:hidden;">
+  <span class="govuk-hint govuk-!-margin-bottom-0">
+    An email will be sent to:
+  </span>
+  <span class="govuk-body-l" id="email-show"></span>
+</div>

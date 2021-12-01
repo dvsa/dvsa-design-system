@@ -19,14 +19,13 @@
 
     <p>Use the email replay component to replay the email users enter in the input field.</p>
 
-
     <div class="app-example">
 
       <span class="app-example__new-window">
-        <a href="/styles/externallink/examples/default" target="_blank">Open this example in a new window</a>
+        <a href="/components/emailreplay/examples/default/index.html" target="_blank">Open this example in a new window</a>
       </span>
 
-      <iframe class="app-example__frame" scrolling="auto" frameborder="0" height="100" src="/components/externallink/examples/default"></iframe>
+      <iframe class="app-example__frame" scrolling="auto" frameborder="0" height="400" src="/components/emailreplay/examples/default"></iframe>
 
     </div>
 
@@ -34,85 +33,94 @@
 
       <ul class="app-tabs__list" role="tablist">
         <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#html-default-" role="tab" id="tab_html-default-" aria-controls="html-default-" aria-selected="false">HTML</a></li>
-        <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#css-" role="tab" id="tab_css-" aria-controls="css-" aria-selected="false">CSS</a></li>
-        <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#scss-" role="tab" id="tab_scss-" aria-controls="scss-" aria-selected="false">SCSS</a></li>
+        <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#javascript-" role="tab" id="tab_javascript-" aria-controls="javascript-" aria-selected="false">Javascript</a></li>
+        <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#ajax-" role="tab" id="tab_ajax-" aria-controls="ajax-" aria-selected="false">Ajax</a></li>
       </ul>
 
-<div class="app-tabs__panel" id="html-default-" data-module="app-copy" role="tabpanel" aria-labelledby="tab_html-default-"><button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+      <div class="app-tabs__panel" id="html-default-" data-module="app-copy" role="tabpanel" aria-labelledby="tab_html-default-">
+        <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
 
-<pre><code>
+        <pre><code>
 
-&#x3C;a class=&#x22;external-link&#x22; title=&#x22;&#x22; href=&#x22;#&#x22; target=&#x22;_blank&#x22;&#x3E;
-  &#x3C;span class=&#x22;external-link__assistive&#x22;&#x3E;External link&#x3C;/span&#x3E;
-  Find out more about operator licence laws
-&#x3C;/a&#x3E;
+  &lt;div class=&quot;govuk-form-group&quot;&gt;
+    &lt;label class=&quot;govuk-label&quot; for=&quot;email&quot;&gt;
+      Your email address
+    &lt;/label&gt;
+    &lt;span id=&quot;hint&quot; class=&quot;govuk-hint&quot;&gt;
+      We&rsquo;ll only use this to contact you about your acquired rights application.
+    &lt;/span&gt;
+    &lt;input data-url=&quot;number&quot; aria-describedby=&quot;hint&quot; class=&quot;govuk-input govuk-!-width-two-thirds input-data-form&quot; id=&quot;email&quot; name=&quot;email&quot; type=&quot;text&quot; maxlength=&quot;265&quot;&gt;
+  &lt;/div&gt;
 
-</code></pre>
-</div>
+  &lt;div class=&quot;govuk-inset-text&quot; style=&quot;overflow:hidden;&quot;&gt;
+    &lt;span class=&quot;govuk-hint govuk-!-margin-bottom-0&quot;&gt;
+      An email will be sent to:
+    &lt;/span&gt;
+    &lt;span class=&quot;govuk-body-l&quot; id=&quot;email-show&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+
+        </code></pre>
+
+      </div>
 
 
-<div class="app-tabs__panel" id="css-" data-module="app-copy" role="tabpanel" aria-labelledby="tab_css-"><button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+      <div class="app-tabs__panel" id="javascript-" data-module="app-copy" role="tabpanel" aria-labelledby="tab_javascript-"><button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
 
-<pre><code class="hljs">
-
-.external-link{
-  display: inline-block;
-  background-image: url(&#x22;/public/images/selfserve-external-link.svg&#x22;);
-  background-size: 12px;
-  background-repeat: no-repeat;
-  background-position: right center;
-  display: inline-block;
-  padding-right: 17px;
-}
-.external-link__assistive {
-  display: none;
-}
-
-</code></pre>
-
-</div>
+      <pre><code class="hljs">
 
 
 
-<div class="app-tabs__panel" id="scss-" data-module="app-copy" role="tabpanel" aria-labelledby="tab_scss-"><button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+      </code></pre>
 
-<pre><code class="hljs">
+      </div>
 
-.external-link{
 
-  display: inline-block;
-  background-image:url(&#x27;/public/images/selfserve-external-link.svg&#x27;);
-  background-size: 12px;
-  background-repeat:no-repeat;
-  background-position: right center;
-  display: inline-block;
-  padding-right: 17px;
 
-  &#x26;__assistive{
-    display: none;
-  }
+      <div class="app-tabs__panel" id="ajax-" data-module="app-copy" role="tabpanel" aria-labelledby="tab_ajax-"><button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
 
-}
+      <pre><code class="hljs">
 
-</code></pre>
 
-</div>
+      </code></pre>
+
+      </div>
 
     </div>
 
 <h2 id="when-to-use-this-component">When to use this component</h2>
-<p>Use this component when the user needs to be aware that the link will be going to an external URL.</p>
+<p>Use this component when it is important for the user to enter the correct email address.</p>
 
 <h2 id="when-not-to-use-this-component">When not to use this component</h2>
-<p>Do not use this component when the link does not take the user to an external URL.</p>
+<p>Do not use this component to repeat other inputs, such as entering a first name, as the email address error functionality will not work.</p>
 
 <h2 id="how-it-works">How it works</h2>
-<p>To show visually that a url is external, apply the class: <code>.external-link</code> to make the external icon appear.</p>
-<p>The icon is applied via css and does not require any additional HTML. Ensure the background image URL is correct otherwise the svg icon will not appear.</p>
-<p>There is also hidden assistive text to tell screenreaders this is an external link as the icon will no be visible.</p>
+<p>As the user enters their email address it will be repeated to them in the inset text component.</p>
+<p>This is to aid the user in entering the correct address, by giving them an opportunity to notice errors in what they have typed.</p>
+<p>The component also detects if the user may have typed something wrong, by cross checking what they have entered with common mistakes via AJAX.</p>
+<p>If the component does detect a possible error, it will show an error message to the user with what is typed currently and a suggestion.</p>
 
 <h2 id="research-on-this-component">Research on this component</h2>
 <p>We have tested this component with 4 out of 5 of our <a href="/get-started/common-user-needs#coregroups">core user groups</a> for assessment of quality which you can view in the tables in this section. If you have used the external link component, get in touch to share your research findings.</p>
+
+<!--
+
+<strong class="govuk-tag govuk-tag--grey">
+  Not tested
+</strong>
+
+<strong class="govuk-tag govuk-tag--blue">
+  Testing soon
+</strong>
+
+<strong class="govuk-tag govuk-tag--green">
+  Passed testing
+</strong>
+
+<strong class="govuk-tag govuk-tag--red">
+  Failed test
+</strong>
+
+ -->
 
 <table class="govuk-table">
   <thead class="govuk-table__head">
@@ -124,17 +132,17 @@
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
       <td class="govuk-table__cell">
-        <5 on digital inclusion scale
+        -5 on digital inclusion scale
       </td>
       <td class="govuk-table__cell">
-        <strong class="govuk-tag govuk-tag--green">
-          Passed testing
+        <strong class="govuk-tag govuk-tag--grey">
+          Not tested
         </strong>
       </td>
     </tr>
     <tr class="govuk-table__row">
       <td class="govuk-table__cell">
-        >5 on digital inclusion scale
+        +5 on digital inclusion scale
       </td>
       <td class="govuk-table__cell">
         <strong class="govuk-tag govuk-tag--green">
@@ -158,8 +166,8 @@
         Physical access needs
       </td>
       <td class="govuk-table__cell">
-        <strong class="govuk-tag govuk-tag--blue">
-          Testing soon
+        <strong class="govuk-tag govuk-tag--grey">
+          Not tested
         </strong>
       </td>
     </tr>
@@ -189,8 +197,8 @@
         Public
       </td>
       <td class="govuk-table__cell">
-        <strong class="govuk-tag govuk-tag--blue">
-          Testing soon
+        <strong class="govuk-tag govuk-tag--green">
+          Passed testing
         </strong>
       </td>
     </tr>
@@ -199,8 +207,8 @@
         Internal/Trade
       </td>
       <td class="govuk-table__cell">
-        <strong class="govuk-tag govuk-tag--blue">
-          Testing soon
+        <strong class="govuk-tag govuk-tag--grey">
+          Not tested
         </strong>
       </td>
     </tr>
@@ -220,8 +228,8 @@
         Tested on the move (mobile)
       </td>
       <td class="govuk-table__cell">
-        <strong class="govuk-tag govuk-tag--grey">
-          Not tested
+        <strong class="govuk-tag govuk-tag--blue">
+          Testing soon
         </strong>
       </td>
     </tr>
@@ -230,8 +238,8 @@
         Fixed/stationary access (desktop)
       </td>
       <td class="govuk-table__cell">
-        <strong class="govuk-tag govuk-tag--grey">
-          Not tested
+        <strong class="govuk-tag govuk-tag--green">
+          Passed testing
         </strong>
       </td>
     </tr>
@@ -261,8 +269,8 @@
         Multiple component page journey
       </td>
       <td class="govuk-table__cell">
-        <strong class="govuk-tag govuk-tag--red">
-          Failed test
+        <strong class="govuk-tag govuk-tag--grey">
+          Not tested
         </strong>
       </td>
     </tr>
@@ -271,26 +279,76 @@
 
 <h2 id="research-on-this-component">Taxonomies</h2>
 <p>Use the taxonomy list to see what journeys this component is used in across DVSA.</p>
-<p class="govuk-!-margin-bottom-7">
-  <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--green">
-    Check something
-  </strong>
-  <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--turquoise">
-    Register for something
-  </strong>
-  <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--blue">
-    Tell something
-  </strong>
+<!--
+<p>
+  <a href="/taxonomies/check/" style="text-decoration: none;">
+    <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--green">
+      Check something
+    </strong>
+  </a>
+  <a href="/taxonomies/register/">
+    <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--turquoise">
+      Register for something
+    </strong>
+  </a>
+  <a href="/taxonomies/tell/" style="text-decoration: none;">
+    <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--blue">
+      Tell something
+    </strong>
+  </a>
+  <a href="/taxonomies/request/" style="text-decoration: none;">
+    <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--purple">
+      Request something
+    </strong>
+  </a>
+  <a href="/taxonomies/apply/" style="text-decoration: none;">
+    <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--pink">
+      Apply for something
+    </strong>
+  </a>
+  <a href="/taxonomies/book/" style="text-decoration: none;">
+    <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--red">
+      Book something
+    </strong>
+  </a>
+  <a href="/taxonomies/learn/" style="text-decoration: none;">
+    <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--orange">
+      Learn something
+    </strong>
+  </a>
+  <a href="/taxonomies/pay/" style="text-decoration: none;">
+    <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--yellow">
+      Pay for something
+    </strong>
+  </a>
+</p>
+-->
+
+<p>
+
+  <a href="/taxonomies/apply/" style="text-decoration: none;">
+    <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--pink">
+      Apply for something
+    </strong>
+  </a>
+
 </p>
 
-
 <h2 id="research-on-this-component">Services using this component</h2>
+
+<p class="govuk-body">This component was used:</p>
+
+<ul class="govuk-list">
+  <li>
+    <b>1 time</b> in the Emergency driving test service.
+  </li>
+</ul>
 
 <p class="govuk-body">This component is used:</p>
 
 <ul class="govuk-list">
   <li>
-    <b>41 times</b> in the Vehicle Operator Licencing (VOL) service.
+    <b>1 time</b> in the Apply to be temporarily recognised as a transport manager for vans service.
   </li>
 </ul>
 

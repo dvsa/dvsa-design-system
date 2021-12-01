@@ -12,3 +12,9 @@ var $codeBlocks = document.querySelectorAll('[data-module="app-copy"]');
 nodeListForEach($codeBlocks, function ($codeBlock) {
   new Copy($codeBlock).init()
 })
+
+
+$("#email").on("input", function(){
+  var theEmail = $(this).val();
+  $('#email-show').html(theEmail);
+});
