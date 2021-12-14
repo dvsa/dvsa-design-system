@@ -2,8 +2,8 @@
 
 {% set sectionId = "components" %}
 {% set sectionTitle = "Components" %}
-{% set pageId = "email-replay" %}
-{% set pageTitle = "Email replay" %}
+{% set pageId = "autocomplete" %}
+{% set pageTitle = "Autocomplete" %}
 
 {% block subNav %}
 {% include "../navigation.html" %}
@@ -17,15 +17,15 @@
 
   <div class="app-prose-scope">
 
-    <p>Use the email replay component to replay the email users enter in the input field.</p>
+    <p>Use the autocomplete component to help users select an option from a large select list.</p>
 
     <div class="app-example">
 
       <span class="app-example__new-window">
-        <a href="/components/emailreplay/examples/default/index.html" target="_blank">Open this example in a new window</a>
+        <a href="/components/autocomplete/examples/default/index.html" target="_blank">Open this example in a new window</a>
       </span>
 
-      <iframe class="app-example__frame" scrolling="auto" frameborder="0" height="400" src="/components/emailreplay/examples/default"></iframe>
+      <iframe class="app-example__frame" scrolling="auto" frameborder="0" height="400" src="/components/autocomplete/examples/default"></iframe>
 
     </div>
 
@@ -34,7 +34,6 @@
       <ul class="app-tabs__list" role="tablist">
         <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#html-default-" role="tab" id="tab_html-default-" aria-controls="html-default-" aria-selected="false">HTML</a></li>
         <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#javascript-" role="tab" id="tab_javascript-" aria-controls="javascript-" aria-selected="false">Javascript</a></li>
-        <li class="app-tabs__list-item" role="presentation"><a class="app-tabs__tab" href="#ajax-" role="tab" id="tab_ajax-" aria-controls="ajax-" aria-selected="false">Ajax</a></li>
       </ul>
 
       <div class="app-tabs__panel" id="html-default-" data-module="app-copy" role="tabpanel" aria-labelledby="tab_html-default-">
@@ -75,29 +74,22 @@
       </div>
 
 
-
-      <div class="app-tabs__panel" id="ajax-" data-module="app-copy" role="tabpanel" aria-labelledby="tab_ajax-"><button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
-
-      <pre><code class="hljs">
-
-
-      </code></pre>
-
-      </div>
-
     </div>
 
 <h2 id="when-to-use-this-component">When to use this component</h2>
-<p>Use this component when it is important for the user to enter the correct email address.</p>
+<p>Use this component as an alternative to the select component when the user has to choose from a large list of options.</p>
 
 <h2 id="when-not-to-use-this-component">When not to use this component</h2>
-<p>Do not use this component to repeat other inputs, such as entering a first name, as the email address error functionality will not work.</p>
+<p>
+  Before using the autocomplete component, try asking users questions which will allow you to present them with fewer options.
+</p>
+<p>
+  Asking questions means you’re less likely to need to use the autocomplete component, and can consider using a different solution, such as radios.
+</p>
 
 <h2 id="how-it-works">How it works</h2>
-<p>As the user enters their email address it will be repeated to them in the inset text component.</p>
-<p>This is to aid the user in entering the correct address, by giving them an opportunity to notice errors in what they have typed.</p>
-<p>The component also detects if the user may have typed something wrong, by cross checking what they have entered with common mistakes via AJAX.</p>
-<p>If the component does detect a possible error, it will show an error message to the user with what is typed currently and a suggestion.</p>
+<p>As the user types, the list of options will be reduced depending on what they type.</p>
+<p>For example, if the user types 'AL' when using this component to select a list of American states, it would present Alabama and Alaska in the dropdown.</p>
 
 <h2 id="research-on-this-component">Research on this component</h2>
 <p>We have tested this component with 4 out of 5 of our <a href="/get-started/common-user-needs#core-user-groups">core user groups</a> for assessment of quality which you can view in the tables in this section. If you have used this component, get in touch to share your research findings.</p>

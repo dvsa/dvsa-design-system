@@ -18,3 +18,5 @@ $("#email").on("input", function(){
   var theEmail = $(this).val();
   $('#email-show').html(theEmail);
 });
+
+const autoCompleteJS = new autoComplete({ config });
