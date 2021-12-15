@@ -37,6 +37,7 @@
     "govuk-frontend": "^3.11.0",
     "gray-matter": "^4.0.1",
     "gulp-nodemon": "^2.4.2",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^2.6.0",
     "highlight.js": "^10.4.1",
     "js-beautify": "^1.7.5",
@@ -52,8 +53,6 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-sass": "^3.0.0",
-    "node-sass": "^4.14.1",
     "sass": "^1.43.2"
   }
 }
