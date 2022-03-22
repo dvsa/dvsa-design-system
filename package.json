@@ -20,9 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/dvsa/dvsa-design-system.git"
   },
-  {
-   "type": "module",
-  },
+  "type": "module",
   "author": "Alex Lee",
   "license": "MIT",
   "bugs": {
