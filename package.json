@@ -9,10 +9,10 @@
     "design",
     "patterns"
   ],
-  "website": "https://dvsa-design-system.herokuapp.com/",
+  "website": "https://murmuring-mesa-82535.herokuapp.com/",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
+    "start": "gulp", 
     "heroku-prebuild": "npm install -f",
     "heroku-postbuild": "npm run prod"
   },
