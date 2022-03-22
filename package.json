@@ -9,10 +9,12 @@
     "design",
     "patterns"
   ],
-  "website": "https://dvsa-design-system.herokuapp.com/",
+  "website": "https://murmuring-mesa-82535.herokuapp.com/",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "heroku-prebuild": "npm install -f",
+    "heroku-postbuild": "npm run prod"
   },
   "repository": {
     "type": "git",
@@ -49,11 +51,12 @@
     "nunjucks-markdown": "^2.0.1",
     "portscanner": "^2.1.1",
     "prompt": "^1.0.0",
-    "require-dir": "^1.0.0"
+    "require-dir": "^1.0.0",
+    "serve": "^13.0.2"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.1",
-    "sass": "^1.43.2"
+    "sass": "^1.47.0"
   }
 }

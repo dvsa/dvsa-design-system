@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const requireDir = require('require-dir');
+const sass = require('gulp-sass')(require('sass'));
 
 // Require all tasks in gulp/tasks, including subfolders
 requireDir('./gulp', { recurse: true });
@@ -21,7 +22,7 @@ gulp.task('watch', gulp.parallel(
   'watch-assets',
   'watch-components'
 ));
- 
+
 
 gulp.task('default', gulp.series(
   'generate-assets',

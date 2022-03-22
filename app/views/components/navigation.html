@@ -1,19 +1,45 @@
 {{ appSubNavigation({
-  items: [
+  sections: [
   {
-    text: 'Email replay',
-    href: '/components/emailreplay',
-    selected: pageId == 'email-replay'
-  },
-  {
-    text: 'Autocomplete',
-    href: '/components/autocomplete',
-    selected: pageId == 'autocomplete'
-  },
+    heading: {
+      text: 'Web components'
+    },
+    items: [{
+      text: 'Email replay',
+      href: '/components/emailreplay',
+      selected: pageId == 'email-replay'
+    },
+    {
+      text: 'Autocomplete',
+      href: '/components/autocomplete',
+      selected: pageId == 'autocomplete'
+    },
     {
       text: 'Notices',
       href: '/components/notices',
       selected: pageId == 'notices'
-    }
+    }]
+  },
+  {
+    heading: {
+      text: 'App'
+    },
+    items: [{
+      text: 'app 1',
+      href: '/components/emailreplay',
+      selected: pageId == 'app1'
+    },
+    {
+      text: 'app 2',
+      href: '/components/autocomplete',
+      selected: pageId == 'app2'
+    },
+    {
+      text: 'app 3',
+      href: '/components/notices',
+      selected: pageId == 'app3'
+    }]
+  }
   ]
+
 }) }}
