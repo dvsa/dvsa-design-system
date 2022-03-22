@@ -1,7 +1,6 @@
 {
   "name": "dvsa-design-system",
   "version": "0.0.1-alpha",
-  "type": "module",
   "description": "The DVSA Design System is one place for service teams to find styles, components and patterns for designing DVSA services.",
   "keywords": [
     "dvsa",
