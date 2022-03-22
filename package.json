@@ -1,7 +1,7 @@
 {
   "name": "dvsa-design-system",
   "version": "0.0.1-alpha",
-  "type": "module", 
+  "type": "module",
   "description": "The DVSA Design System is one place for service teams to find styles, components and patterns for designing DVSA services.",
   "keywords": [
     "dvsa",
@@ -10,7 +10,7 @@
     "design",
     "patterns"
   ],
-  "website": "https://murmuring-mesa-82535.herokuapp.com/",
+  "website": "https://dvsa-design-system.herokuapp.com/",
   "main": "index.js",
   "scripts": {
     "start": "gulp",
