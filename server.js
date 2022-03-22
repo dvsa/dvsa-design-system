@@ -108,7 +108,7 @@ if ((env === 'production' || env === 'staging') && useAuth === 'false') {
 // Setup application
 const appViews = [
   path.join(__dirname, '/node_modules/govuk-frontend/'),
-  path.join(__dirname, '/node_modules/@ministryofjustice/frontend/'),
+  path.join(__dirname, '/node_modules/@dvsa/frontend/'),
   path.join(__dirname, 'app/views'),
   path.join(__dirname, 'app/components')
 ];
@@ -128,7 +128,7 @@ nunjucksEnvironment.addGlobal('getJsCode', fileHelper.getJSCode);
 nunjucksEnvironment.addExtension('NunjucksCodeHighlight', highlight);
 
 // Add filters from DVSA Frontend
-//let dvsaFilters = require('./node_modules/@ministryofjustice/frontend/dvsa/filters/all')();
+//let dvsaFilters = require('./node_modules/@dvsa/frontend/dvsa/filters/all')();
 //dvsaFilters = Object.assign(dvsaFilters);
 //Object.keys(dvsaFilters).forEach(function (filterName) {
 //  nunjucksEnvironment.addFilter(filterName, dvsaFilters[filterName])
