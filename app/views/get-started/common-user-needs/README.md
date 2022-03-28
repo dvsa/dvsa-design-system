@@ -80,30 +80,3 @@ Our core user groups.
 #### Multiple component page journey
 
 Our core user groups.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Setting up Heroku
-
-We use pipelines in Heroku. Pipelines let you have multiple apps and keep things together in one place.
-
-1. go to the homepage for [dvsa-design](https://dashboard.heroku.com/teams/dvsa-design/apps) in Heroku
-2. click 'new' in the top right corner of the screen and select 'Create new pipeline'
-3. name the pipeline `{organisation-abbreviation}-{service-name}-prototype`
-4. leave the pipeline owner set to `dvsa-design`
-5. in the connect to GitHub section select `dvsa` and type the name of your repo which is normally `{organisation-abbreviation}-{service-name}-prototype` and click search
-6. find the correct GitHub repo and click 'Connect'
-7. click 'Create pipeline'
-
-If everything has worked you should be taken to the pipeline view. You then need to create an app to deploy your prototype to.
