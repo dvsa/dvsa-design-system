@@ -57,6 +57,7 @@
     "nunjucks-markdown": "^2.0.1",
     "portscanner": "^2.1.1",
     "prompt": "^1.0.0",
+    "sass": "^1.49.9",
     "require-dir": "^1.0.0"
   },
   "devDependencies": {
