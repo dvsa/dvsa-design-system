@@ -1,8 +1,7 @@
 const gulp = require('gulp');
 const requireDir = require('require-dir');
 
-var sass = require('gulp-sass')(require('sass'));
-
+const sass = require('gulp-sass')(require('sass'));
 
 // Require all tasks in gulp/tasks, including subfolders
 requireDir('./gulp', { recurse: true });
