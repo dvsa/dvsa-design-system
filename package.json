@@ -56,9 +56,7 @@
     "prompt": "^1.0.0",
     "require-dir": "^1.0.0",
     "sass": "^1.45.0",
-    "node-sass": "^4.12.0"
-  },
-  "devDependencies": {
+    "node-sass": "^4.12.0",
     "gulp": "^4.0.2"
-  }
+}  
 }
