@@ -16,6 +16,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
+    "postinstall": "npm rebuild node-sass && npm install --unsafe-perm -f node-sass",
     "heroku-prebuild": "npm install -f",
     "heroku-postbuild": "npm run prod"
   },
