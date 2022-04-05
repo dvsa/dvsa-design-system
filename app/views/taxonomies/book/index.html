@@ -15,25 +15,31 @@
 
   <div class="app-prose-scope">
 
-    <p>This page shows all known patterns and components used in the apply for something taxonomy.</p>
-    <h2 id="patterns">Patterns</h2>
-    <p>You’ll need to be a member of the <a href="https://dashboard.heroku.com/teams/dvsa-design/apps">dvsa-design</a> Heroku team and have your prototype in <a href="https://github.com/dvsa">DVSA’s GitHub account</a>.</p>
-    <p>If you don’t have access to these, ask in the Slack channel <a href="https://dvsa.slack.com/messages/CH5RUSB27">#dvsa-design-system</a> and whoever is managing support that day should be able to add you.</p>
+    <p>This page shows all known patterns and components used in the '{{ pageTitle }}' taxonomy.</p>
 
     <h2 id="components">Components</h2>
 
-    <p>We use pipelines in Heroku. Pipelines let you have multiple apps and keep things together in one place.</p>
-    <ol>
-      <li>go to the homepage for <a href="https://dashboard.heroku.com/teams/dvsa-design/apps">dvsa-design</a> in Heroku</li>
-      <li>click ‘new’ in the top right corner of the screen and select ‘Create new pipeline’</li>
-      <li>name the pipeline <code>{organisation-abbreviation}-{service-name}-prototype</code></li>
-      <li>leave the pipeline owner set to <code>dvsa-design</code></li>
-      <li>in the connect to GitHub section select <code>dvsa</code> and type the name of your repo which is normally <code>{organisation-abbreviation}-{service-name}-prototype</code> and click search</li>
-      <li>find the correct GitHub repo and click ‘Connect’</li>
-      <li>click ‘Create pipeline’</li>
-    </ol>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+        <h3>Numberplate display component</h3>
+        <img src="/public/images/components/numberplate.png" style="max-width:200px;">
+        <p>Use the numberplate display component to help users identify a vehicle.</p>
+        <p>
+          <a class="govuk-link" href="components/numberplate">
+            View numberplate display component
+          </a>
+        </p>
+      </div>
 
-    <p>If everything has worked you should be taken to the pipeline view. You then need to create an app to deploy your prototype to.</p>
+      <div class="govuk-grid-column-one-half">
+
+      </div>
+    </div>
+
+    <h2 id="patterns">Patterns</h2>
+
+    <p>No patterns currently.</p>
+
 
   </div>
 
