@@ -13,4 +13,4 @@ There is a DVSA accessibility network of colleagues across DVSA who meet regular
 
 Here is a list of useful resources for accessibility testing.
 
-1. The DWP have a great [Accessibility manual](https://accessibility-manual.dwp.gov.uk/) sharing guidance and best practice
+1. The DWP have a great [accessibility manual](https://accessibility-manual.dwp.gov.uk/) sharing guidance and best practice
