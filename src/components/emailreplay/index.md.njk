@@ -1,0 +1,216 @@
+---
+layout: layout-pane.njk
+title: Email replay component
+section: Components
+theme: Web components
+order: 1
+description: Use the email replay component to replay the email users enter in the input field.
+---
+
+
+<p class="govuk-body">Use the email replay component to replay the email users enter in the input field.</p>
+
+<img src="/images/components/emailreplay.gif" alt="An image showing the functionality of the email replay component">
+
+<h2 class="govuk-!-margin-top-5" id="when-to-use-this-component">When to use this component</h2>
+<p class="govuk-body">Help users check that they have entered the correct email address by replaying their email address back to them.</p>
+
+<h2 id="when-not-to-use-this-component">When not to use this component</h2>
+<p class="govuk-body">Do not use this component for anything other than email inputs. The email address error detection will not work.</p>
+
+<h2 id="how-it-works">How it works</h2>
+<p class="govuk-body">As the user enters their email address it will be repeated to them in the inset text component.</p>
+<p class="govuk-body">This is to aid the user in entering the correct address, by giving them an opportunity to notice errors in what they have typed.</p>
+<p class="govuk-body">The component also detects if the user may have typed something wrong, by cross checking what they have entered with common mistakes using AJAX.</p>
+<p class="govuk-body">If the component does detect a possible error, it will show an error message to the user with what is typed currently and a suggestion.</p>
+
+<h2 id="research-on-this-component">Research on this component</h2>
+<p class="govuk-body">We have tested this component with 4 out of 5 of our <a href="/get-started/user-needs/">core user groups</a> for assessment of quality which you can view in the tables in this section. If you have used this component, get in touch to share your research findings.</p>
+
+
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header govuk-!-width-one-half" scope="col"> Digital capability </th>
+      <th class="govuk-table__header govuk-!-width-one-half" scope="col"> Status </th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+        -5 on digital inclusion scale
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--grey">
+          Not tested
+        </strong>
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+        +5 on digital inclusion scale
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--green">
+          Passed testing
+        </strong>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header govuk-!-width-one-half" scope="col"> Accessibility </th>
+      <th class="govuk-table__header govuk-!-width-one-half" scope="col"> Status </th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+        Physical access needs
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--grey">
+          Not tested
+        </strong>
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+        Cognitive access needs
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--grey">
+          Not tested
+        </strong>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header govuk-!-width-one-half" scope="col"> Language and content </th>
+      <th class="govuk-table__header govuk-!-width-one-half" scope="col"> Status </th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+        Public
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--green">
+          Passed testing
+        </strong>
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+        Internal/Trade
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--grey">
+          Not tested
+        </strong>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header govuk-!-width-one-half" scope="col"> Location </th>
+      <th class="govuk-table__header govuk-!-width-one-half" scope="col"> Status </th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+        Tested on the move (mobile)
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--green">
+          Passed testing
+        </strong>
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+        Fixed/stationary access (desktop)
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--green">
+          Passed testing
+        </strong>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header govuk-!-width-one-half" scope="col"> Task complexity </th>
+      <th class="govuk-table__header govuk-!-width-one-half" scope="col"> Status </th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+        Single component page journey
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--green">
+          Passed test
+        </strong>
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+        Multiple component page journey
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--grey">
+          Not tested
+        </strong>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="research-on-this-component">Taxonomies</h2>
+<p class="govuk-body">Use the taxonomy list to see what journeys this component is used in across DVSA.</p>
+
+<p class="govuk-body">
+
+  <a href="/taxonomies/apply/" style="text-decoration: none;">
+    <strong class="govuk-tag govuk-!-margin-right-2 govuk-!-margin-bottom-2 govuk-tag--pink">
+      Apply for something
+    </strong>
+  </a>
+
+</p>
+
+<h2 id="research-on-this-component">Services using this component</h2>
+
+<p class="govuk-body">This component was used:</p>
+
+<ul class="govuk-list">
+  <li>
+    <b>1 time</b> in the Emergency driving test service.
+  </li>
+</ul>
+
+<p class="govuk-body">This component is used:</p>
+
+<ul class="govuk-list">
+  <li>
+    <b>1 time</b> in the Apply to be temporarily recognised as a transport manager for vans service.
+  </li>
+</ul>

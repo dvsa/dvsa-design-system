@@ -1,7 +1,0 @@
-{
-  "paths": {
-    "public": "public/",
-    "assets" : "app/assets/",
-    "components" : "app/components/"
-  }
-}
