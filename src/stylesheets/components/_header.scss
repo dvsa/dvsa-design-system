@@ -16,5 +16,10 @@
   // viewports)
   .app-header__logo {
     width: auto;
+    margin-bottom: 5px;
   }
+}
+
+.govuk-header__link--homepage{
+  line-height: 40px;
 }
